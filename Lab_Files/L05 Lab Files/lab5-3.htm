@@ -5,7 +5,6 @@
 <title>Lab 5-3</title>
 
 <script type="text/javascript">
-<!--
 
 
 /************************************************
@@ -28,7 +27,6 @@ function checkGrade(form) {
  
  
 
-//-->
 </script>
 
 </head>
@@ -42,7 +40,10 @@ Select numerical grade value:
 <select name="myselect">
 
 <script type="text/javascript">
-  for(i = 100, i >= 0, i--)
+  let i = 100
+  for(let i = 100; i >= 0; i--) {
+    document.write(`<option>${i}</option>`)
+  }
 
 /*********************************************************************
   Create a for statement. Inside the for definition, create a variable 
