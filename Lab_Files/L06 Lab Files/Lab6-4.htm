@@ -4,7 +4,6 @@
 <title>Lab 6-4</title>
 
 <script type="text/javascript">
-<!--
 
   function writeToDocument(){
     var textColor, backColor, pageTitle;
@@ -22,10 +21,13 @@
     pageContent += "</strong></body></html>";
 
     docWindow = open("","docWin","width=250,height=150,resizable=1,status=1");
-    // Write your code here
+    
+    with(docWindow.document);
+    var blackColor = bgcolor;
+    var textColor = fgcolor;
+    write(pageContent)
   }
   
-//-->
 </script>
 </head>
 
