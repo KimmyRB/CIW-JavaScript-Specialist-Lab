@@ -7,9 +7,11 @@
     <script type="text/javascript">
       var str = "Mark, Pete, Emily, Adam";
 
-      var splitted = str.split("", 4);
-      splitted = str.replace("Pete", "Betsy")
-      document.write(splitted.search("Emily"))
+      var splitted = str.split(", ", 4);
+      document.write(splitted);
+
+      splitted = str.replace("Pete", "Betsy");
+      document.write(splitted.search("Emily"));
     </script>
   </head>
   <body>
