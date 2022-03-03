@@ -6,6 +6,7 @@
 
     <script type="text/javascript">
       var citiesArray = ["New York", " Los Angeles", " Chicago"];
+      citiesArray = citiesArray.sort()
     </script>
   </head>
   <body>
@@ -14,8 +15,9 @@
     <script type="text/javascript">
       var len = citiesArray.length;
       for (let i = 0; i < len; i++) {
-        document.write("<br />" + citiesArray + "<br />");
+        document.write("<br />" + citiesArray[i] + "<br />");
       }
+      alert(citiesArray[0])
     </script>
   </body>
 </html>
